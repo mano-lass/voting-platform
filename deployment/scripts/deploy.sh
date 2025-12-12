@@ -31,7 +31,7 @@ echo ""
 
 # Step 2: Build images
 echo "Step 2: Building Docker images..."
-cd "$PROJECT_ROOT/deployment"
+cd "$PROJECT_ROOT"
 docker-compose build --no-cache
 
 echo "✓ Images built successfully"
