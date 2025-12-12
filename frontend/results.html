@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Results - Voting Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Election Results</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="vote.html">Vote</a>
+            </nav>
+        </header>
+
+        <main class="results-page">
+            <div class="results-header">
+                <h2>Presidential Election 2025</h2>
+                <div class="stats-bar">
+                    <div class="stat">
+                        <span class="stat-label">Total Votes:</span>
+                        <span id="total-votes" class="stat-value">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Last Updated:</span>
+                        <span id="last-updated" class="stat-value">--</span>
+                    </div>
+                    <div class="stat">
+                        <button id="refresh-btn" class="btn btn-small">🔄 Refresh</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="results-container" class="results-container">
+                <!-- Results will be loaded dynamically -->
+            </div>
+
+            <div id="loading" class="loading">
+                <p>Loading results...</p>
+            </div>
+
+            <div id="error-message" class="error-message" style="display: none;"></div>
+
+            <div class="results-chart" id="chart-container" style="display: none;">
+                <h3>Visual Representation</h3>
+                <canvas id="results-chart"></canvas>
+            </div>
+
+            <div class="results-info">
+                <h3>ℹ️ About These Results</h3>
+                <ul>
+                    <li>Results are updated in real-time as votes are cast</li>
+                    <li>All votes are stored in a replicated database</li>
+                    <li>The system ensures one vote per voter</li>
+                    <li>Vote anonymity is maintained - no voter identification in results</li>
+                    <li>Data is distributed across multiple servers for reliability</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Distributed Voting Platform</p>
+            <p class="system-info">Served by: <span id="server-id">Unknown</span></p>
+        </footer>
+    </div>
+
+    <script src="js/results.js"></script>
+</body>
+</html>

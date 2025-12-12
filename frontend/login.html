@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Voting Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗳️ Voter Login</h1>
+            <nav>
+                <a href="index.html">← Back to Home</a>
+            </nav>
+        </header>
+
+        <main class="login-page">
+            <div class="login-box">
+                <h2>Authenticate to Vote</h2>
+                <p class="instruction">Enter your voter credentials to access the voting system.</p>
+
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="voter-id">Voter ID</label>
+                        <input 
+                            type="text" 
+                            id="voter-id" 
+                            name="voterId" 
+                            placeholder="Enter your voter ID"
+                            required
+                            autocomplete="username"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Enter your password"
+                            required
+                            autocomplete="current-password"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </div>
+
+                    <div id="error-message" class="error-message" style="display: none;"></div>
+                    <div id="success-message" class="success-message" style="display: none;"></div>
+                </form>
+
+                <div class="info-box">
+                    <h4>Demo Credentials</h4>
+                    <p><strong>Voter ID:</strong> voter001 | <strong>Password:</strong> password123</p>
+                    <p><strong>Voter ID:</strong> voter002 | <strong>Password:</strong> password123</p>
+                </div>
+            </div>
+
+            <div class="security-info">
+                <h3>🔒 Security Information</h3>
+                <ul>
+                    <li>All connections are encrypted with TLS</li>
+                    <li>Passwords are hashed using bcrypt</li>
+                    <li>Session tokens expire after 30 minutes</li>
+                    <li>Each voter can only vote once</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Distributed Voting Platform</p>
+        </footer>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

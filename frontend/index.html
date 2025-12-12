@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributed Voting Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗳️ Distributed Online Voting Platform</h1>
+            <p class="subtitle">Secure, Fault-Tolerant, Democratic</p>
+        </header>
+
+        <main class="landing">
+            <section class="hero">
+                <h2>Welcome to the Future of Voting</h2>
+                <p>Cast your vote securely from anywhere with our distributed, high-availability voting system.</p>
+            </section>
+
+            <section class="features">
+                <div class="feature-card">
+                    <h3>🔒 Secure</h3>
+                    <p>Industry-standard encryption and authentication</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Fast</h3>
+                    <p>Load-balanced infrastructure for instant responses</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🛡️ Reliable</h3>
+                    <p>Fault-tolerant architecture with automatic failover</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Transparent</h3>
+                    <p>Real-time results with complete auditability</p>
+                </div>
+            </section>
+
+            <section class="cta">
+                <a href="login.html" class="btn btn-primary">Login to Vote</a>
+                <a href="results.html" class="btn btn-secondary">View Results</a>
+            </section>
+
+            <section class="system-info">
+                <h3>System Architecture</h3>
+                <ul>
+                    <li>Multi-tier distributed architecture</li>
+                    <li>Load balancer with health checks</li>
+                    <li>3+ redundant application servers</li>
+                    <li>Database replication with automatic failover</li>
+                    <li>99.9% uptime guarantee</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Distributed Voting Platform | Academic Project</p>
+            <p class="status" id="system-status">System Status: <span class="status-indicator">Online</span></p>
+        </footer>
+    </div>
+
+    <script>
+        // Check system status
+        async function checkStatus() {
+            try {
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                document.querySelector('.status-indicator').textContent = 
+                    data.status === 'healthy' ? 'Online ✓' : 'Degraded';
+                document.querySelector('.status-indicator').className = 
+                    data.status === 'healthy' ? 'status-indicator online' : 'status-indicator degraded';
+            } catch (error) {
+                document.querySelector('.status-indicator').textContent = 'Checking...';
+            }
+        }
+        
+        checkStatus();
+        setInterval(checkStatus, 30000); // Check every 30 seconds
+    </script>
+</body>
+</html>

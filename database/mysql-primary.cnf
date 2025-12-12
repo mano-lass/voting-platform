@@ -1,0 +1,45 @@
+# MySQL Master (Primary) Configuration
+# For use with MySQL 8.0+
+
+[mysqld]
+# Server identification
+server-id = 1
+log-bin = /var/log/mysql/mysql-bin.log
+binlog_format = ROW
+binlog_do_db = voting_db
+
+# Replication settings
+sync_binlog = 1
+binlog_expire_logs_seconds = 604800
+
+# InnoDB settings for better performance and reliability
+innodb_flush_log_at_trx_commit = 1
+innodb_buffer_pool_size = 1G
+innodb_log_file_size = 256M
+
+# Connection settings
+max_connections = 200
+max_allowed_packet = 64M
+
+# Character set
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+
+# Logging
+log_error = /var/log/mysql/error.log
+slow_query_log = 1
+slow_query_log_file = /var/log/mysql/slow-query.log
+long_query_time = 2
+
+# Performance schema
+performance_schema = ON
+
+# GTID-based replication (recommended for MySQL 8.0+)
+gtid_mode = ON
+enforce_gtid_consistency = ON
+
+# Semi-synchronous replication (optional - for better durability)
+# Requires plugin installation
+# plugin-load = "rpl_semi_sync_master=semisync_master.so"
+# rpl_semi_sync_master_enabled = 1
+# rpl_semi_sync_master_timeout = 1000

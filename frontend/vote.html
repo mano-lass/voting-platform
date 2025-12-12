@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cast Your Vote - Voting Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗳️ Cast Your Vote</h1>
+            <nav>
+                <span id="voter-name" class="voter-info"></span>
+                <a href="#" id="logout-btn">Logout</a>
+            </nav>
+        </header>
+
+        <main class="voting-page">
+            <div class="voting-box">
+                <h2>Presidential Election 2025</h2>
+                <p class="instruction">Select one candidate below and click Submit Vote.</p>
+
+                <div id="already-voted" class="info-message" style="display: none;">
+                    <h3>✓ You have already voted</h3>
+                    <p>Thank you for participating in this election. Each voter can only cast one vote.</p>
+                    <a href="results.html" class="btn btn-secondary">View Results</a>
+                </div>
+
+                <form id="vote-form" style="display: none;">
+                    <div id="candidates-list" class="candidates-grid">
+                        <!-- Candidates will be loaded dynamically -->
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Submit Vote</button>
+                        <button type="button" id="cancel-btn" class="btn btn-secondary">Cancel</button>
+                    </div>
+
+                    <div id="error-message" class="error-message" style="display: none;"></div>
+                    <div id="success-message" class="success-message" style="display: none;"></div>
+                </form>
+
+                <div id="loading" class="loading">
+                    <p>Loading candidates...</p>
+                </div>
+            </div>
+
+            <div class="voting-info">
+                <h3>📋 Voting Guidelines</h3>
+                <ul>
+                    <li>Review all candidates before making your selection</li>
+                    <li>You can only vote once - choose carefully</li>
+                    <li>Your vote is anonymous and cannot be traced back to you</li>
+                    <li>After voting, you can view real-time results</li>
+                    <li>The system is distributed and highly available</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Distributed Voting Platform</p>
+        </footer>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirm-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h3>Confirm Your Vote</h3>
+            <p>You are about to vote for:</p>
+            <p class="candidate-confirmation" id="selected-candidate-name"></p>
+            <p><strong>This action cannot be undone.</strong></p>
+            <div class="modal-actions">
+                <button id="confirm-vote" class="btn btn-primary">Confirm Vote</button>
+                <button id="cancel-vote" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/voting.js"></script>
+</body>
+</html>
