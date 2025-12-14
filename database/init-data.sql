@@ -25,7 +25,17 @@ INSERT INTO voters (voter_id, password_hash, first_name, last_name, email, has_v
 ('voter007', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'James', 'Anderson', 'james.anderson@example.com', FALSE),
 ('voter008', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Lisa', 'Thomas', 'lisa.thomas@example.com', FALSE),
 ('voter009', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Robert', 'Jackson', 'robert.jackson@example.com', FALSE),
-('voter010', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Mary', 'White', 'mary.white@example.com', FALSE);
+('voter010', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Mary', 'White', 'mary.white@example.com', FALSE),
+('voter011', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Patricia', 'Harris', 'patricia.harris@example.com', FALSE),
+('voter012', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Christopher', 'Martin', 'christopher.martin@example.com', FALSE),
+('voter013', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Jennifer', 'Thompson', 'jennifer.thompson@example.com', FALSE),
+('voter014', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Daniel', 'Garcia', 'daniel.garcia@example.com', FALSE),
+('voter015', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Elizabeth', 'Martinez', 'elizabeth.martinez@example.com', FALSE),
+('voter016', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Matthew', 'Robinson', 'matthew.robinson@example.com', FALSE),
+('voter017', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Linda', 'Clark', 'linda.clark@example.com', FALSE),
+('voter018', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Anthony', 'Rodriguez', 'anthony.rodriguez@example.com', FALSE),
+('voter019', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Barbara', 'Lewis', 'barbara.lewis@example.com', FALSE),
+('voter020', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Mark', 'Lee', 'mark.lee@example.com', FALSE);
 
 -- Optional: Insert some sample votes for testing results display
 -- Uncomment the following lines to add test votes

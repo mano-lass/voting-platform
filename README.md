@@ -1,4 +1,4 @@
-# 🗳️ Distributed Online Voting Platform
+  # 🗳️ Distributed Online Voting Platform
 
 A fault-tolerant, distributed voting system built with a multi-tier architecture featuring load balancing, database replication, and automatic failover mechanisms.
 
