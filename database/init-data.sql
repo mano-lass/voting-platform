@@ -16,16 +16,16 @@ INSERT INTO candidates (candidate_name, party, bio) VALUES
 -- Note: In production, use proper password hashing on application side
 
 INSERT INTO voters (voter_id, password_hash, first_name, last_name, email, has_voted) VALUES
-('voter001', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'John', 'Doe', 'john.doe@example.com', FALSE),
-('voter002', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Jane', 'Smith', 'jane.smith@example.com', FALSE),
-('voter003', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Michael', 'Brown', 'michael.brown@example.com', FALSE),
-('voter004', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Emily', 'Davis', 'emily.davis@example.com', FALSE),
-('voter005', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'David', 'Wilson', 'david.wilson@example.com', FALSE),
-('voter006', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Sarah', 'Taylor', 'sarah.taylor@example.com', FALSE),
-('voter007', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'James', 'Anderson', 'james.anderson@example.com', FALSE),
-('voter008', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Lisa', 'Thomas', 'lisa.thomas@example.com', FALSE),
-('voter009', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Robert', 'Jackson', 'robert.jackson@example.com', FALSE),
-('voter010', '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'Mary', 'White', 'mary.white@example.com', FALSE);
+('voter001', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'John', 'Doe', 'john.doe@example.com', FALSE),
+('voter002', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Jane', 'Smith', 'jane.smith@example.com', FALSE),
+('voter003', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Michael', 'Brown', 'michael.brown@example.com', FALSE),
+('voter004', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Emily', 'Davis', 'emily.davis@example.com', FALSE),
+('voter005', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'David', 'Wilson', 'david.wilson@example.com', FALSE),
+('voter006', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Sarah', 'Taylor', 'sarah.taylor@example.com', FALSE),
+('voter007', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'James', 'Anderson', 'james.anderson@example.com', FALSE),
+('voter008', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Lisa', 'Thomas', 'lisa.thomas@example.com', FALSE),
+('voter009', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Robert', 'Jackson', 'robert.jackson@example.com', FALSE),
+('voter010', '$2a$10$WNPLBofWYdUaJMVdan0sAec1tzn4QH27pBcDZzlSlqqDwQOdgNoJu', 'Mary', 'White', 'mary.white@example.com', FALSE);
 
 -- Optional: Insert some sample votes for testing results display
 -- Uncomment the following lines to add test votes
